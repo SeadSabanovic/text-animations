@@ -37,24 +37,41 @@ body {
 
 .section {
   $section: &;
-  height: 100vmin;
-  padding: 24px;
+  min-height: 60vmin;
+  padding: 3rem 24px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   &__title {
-    font-size: 4rem;
+    $title: &;
+    font-size: 2.5rem;
     text-transform: uppercase;
 
-    &__char {
+    &__char,
+    &__word {
       display: inline-block;
+      line-height: 0;
     }
-  }
 
-  #{$section}--0 {
-    #{$section}__char {
+    &--0 {
+      text-align: center;
 
+      #{$title}__container {
+        position: relative;
+
+        #{$title}__sentence {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+
+          #{$title}__char {
+            line-height: 0.5;
+          }
+        }
+      }
     }
   }
 }
