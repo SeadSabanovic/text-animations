@@ -5,17 +5,17 @@ export default function Section({ style }) {
   return (
     <div className={`section section--${style}`}>
       <h1 className="section__title">
-        <span className="section__title__letter">T</span>
-        <span className="section__title__letter">e</span>
-        <span className="section__title__letter">x</span>
-        <span className="section__title__letter">t</span>
-        <span className="section__title__letter">.</span>
-        <span className="section__title__letter">r</span>
-        <span className="section__title__letter">e</span>
-        <span className="section__title__letter">v</span>
-        <span className="section__title__letter">e</span>
-        <span className="section__title__letter">a</span>
-        <span className="section__title__letter">l</span>
+        <span className="section__title__char">T</span>
+        <span className="section__title__char">e</span>
+        <span className="section__title__char">x</span>
+        <span className="section__title__char">t</span>
+        <span className="section__title__char">.</span>
+        <span className="section__title__char">r</span>
+        <span className="section__title__char">e</span>
+        <span className="section__title__char">v</span>
+        <span className="section__title__char">e</span>
+        <span className="section__title__char">a</span>
+        <span className="section__title__char">l</span>
       </h1>
     </div>
   );
