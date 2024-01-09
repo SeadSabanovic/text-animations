@@ -21,7 +21,7 @@ export default function Roll() {
           yPercent: i % 2 === 0 ? 0 : -100,
           repeat: -1,
         },
-        "<"
+        `<`
       );
     });
   });

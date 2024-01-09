@@ -4,6 +4,7 @@ import TextFollow from "./components/TextFollow";
 import Intro from "./components/Intro";
 import Pop from "./components/Pop";
 import Roll from "./components/Roll";
+import Typewriter from "./components/Typewriter";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <TextFollow />
         <Pop />
         <Roll />
+        <Typewriter />
       </div>
     </ReactLenis>
   );

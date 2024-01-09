@@ -106,13 +106,26 @@ body {
       transform: translate(-50%, -50%);
       overflow: hidden;
       display: flex;
-      // calc font-size * 1.5
       height: calc(2.5rem * 1.5);
       line-height: 1.5;
 
       #{$title}__char {
         display: flex;
         flex-direction: column;
+      }
+    }
+
+    &--4 {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 10px;
+
+      .cursor {
+        margin-left: -6px;
+        transform: translateY(4px);
+        width: 22px;
+        height: 2px;
+        background-color: #f92f60;
       }
     }
   }
