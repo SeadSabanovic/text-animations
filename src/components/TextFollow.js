@@ -24,6 +24,7 @@ export default function TextFollow() {
 
   return (
     <div className="section">
+      <code>Text Follow</code>
       <h1 className="section__title section__title--1">
         {words.map((word, index) => {
           return <span key={index}>{word} </span>;
