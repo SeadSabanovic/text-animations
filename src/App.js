@@ -2,6 +2,7 @@ import { useLayoutEffect } from "react";
 import "./App.scss";
 import gsap from "gsap";
 import { ReactLenis } from "@studio-freight/react-lenis";
+import TextFollow from "./components/TextFollow";
 
 function App() {
   const classes = {
@@ -45,7 +46,7 @@ function App() {
           );
       });
 
-    gsap.from(`${classes.title}--1 ${classes.char}`, {
+    gsap.from(`${classes.title}--2 ${classes.char}`, {
       duration: 0.5,
       opacity: 0,
       scale: 0,
@@ -98,8 +99,9 @@ function App() {
             </div>
           </h1>
         </div>
+        <TextFollow />
         <div className="section">
-          <h1 className="section__title section__title--1">
+          <h1 className="section__title section__title--2">
             <div className="section__title__word">
               <span className="section__title__char">S</span>
               <span className="section__title__char">I</span>
@@ -109,13 +111,6 @@ function App() {
               <span className="section__title__char">E</span>
               <span className="section__title__char">.</span>
             </div>
-          </h1>
-        </div>
-        <div className="section">
-          <h1 className="section__title section__title--2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
           </h1>
         </div>
       </div>

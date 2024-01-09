@@ -37,7 +37,7 @@ body {
 
 .section {
   $section: &;
-  min-height: 60vmin;
+  min-height: 80vmin;
   padding: 3rem 24px;
   display: flex;
   align-items: center;
@@ -71,6 +71,16 @@ body {
             line-height: 0.5;
           }
         }
+      }
+    }
+
+    &--1 {
+      span {
+        background-image: linear-gradient(to right, #fff 50%, lighten(#000, 15%) 50%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200%;
+        background-position: 100% 0px;
       }
     }
   }
