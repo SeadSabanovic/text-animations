@@ -5,6 +5,7 @@ import Intro from "./components/Intro";
 import Pop from "./components/Pop";
 import Roll from "./components/Roll";
 import Typewriter from "./components/Typewriter";
+import Header from "./components/Header";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Pop />
         <Roll />
         <Typewriter />
+        <Header />
       </div>
     </ReactLenis>
   );
